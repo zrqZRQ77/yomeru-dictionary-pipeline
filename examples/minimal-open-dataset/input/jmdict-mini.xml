@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JMdict>
+  <entry>
+    <ent_seq>cc0-0001</ent_seq>
+    <k_ele><keb>学ぶ</keb></k_ele>
+    <r_ele><reb>まなぶ</reb></r_ele>
+    <sense>
+      <pos>verb</pos>
+      <gloss xml:lang="eng">to learn</gloss>
+      <gloss xml:lang="eng">to study</gloss>
+    </sense>
+  </entry>
+  <entry>
+    <ent_seq>cc0-0002</ent_seq>
+    <k_ele><keb>読む</keb></k_ele>
+    <r_ele><reb>よむ</reb></r_ele>
+    <sense>
+      <pos>verb</pos>
+      <gloss xml:lang="eng">to read</gloss>
+    </sense>
+  </entry>
+  <entry>
+    <ent_seq>cc0-0003</ent_seq>
+    <k_ele><keb>辞書</keb></k_ele>
+    <r_ele><reb>じしょ</reb></r_ele>
+    <sense>
+      <pos>noun</pos>
+      <gloss xml:lang="eng">dictionary</gloss>
+    </sense>
+  </entry>
+</JMdict>

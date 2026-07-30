@@ -1,0 +1,27 @@
+{
+  "name": "yomeru-dictionary-pipeline",
+  "version": "0.1.0",
+  "description": "Yomeru Dictionary Pipeline: a reproducible, provenance-aware pipeline for Japanese dictionary data.",
+  "type": "module",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/cli/main.mjs build --input examples/minimal-open-dataset/input/jmdict-mini.xml --sources examples/minimal-open-dataset/source-records.json --corpus examples/minimal-open-dataset/corpus.json --output dist",
+    "clean": "node scripts/clean.mjs",
+    "test": "node --test",
+    "schema:validate": "node src/cli/main.mjs schema-check --input examples/minimal-open-dataset/input/jmdict-mini.xml --sources examples/minimal-open-dataset/source-records.json",
+    "example:build": "npm run build",
+    "verify:determinism": "node scripts/verify-determinism.mjs",
+    "scan:safety": "node scripts/security-scan.mjs",
+    "check:whitespace": "node scripts/check-whitespace.mjs",
+    "verify": "npm run test && npm run schema:validate && npm run clean && npm run build && npm run verify:determinism && npm run scan:safety && npm run check:whitespace"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "fast-xml-parser": "5.10.1"
+  }
+}

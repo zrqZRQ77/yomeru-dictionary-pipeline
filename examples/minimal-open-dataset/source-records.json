@@ -1,0 +1,26 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "id": "cc0-hand-authored-fixture",
+    "name": "Minimal hand-authored Japanese lexical fixture",
+    "organization": "Project contributors",
+    "url": "https://example.invalid/minimal-open-dataset",
+    "version": "1.0.0",
+    "retrievedAt": "2026-07-31",
+    "license": {
+      "id": "CC0-1.0",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "",
+      "redistributionAllowed": true,
+      "shareAlike": false
+    },
+    "usage": {
+      "mode": "fixture",
+      "notes": "Synthetic records created only for parser, audit, and deterministic-build tests."
+    },
+    "transformations": [
+      "Encoded in a JMdict-like XML shape for interface testing"
+    ]
+  }
+]

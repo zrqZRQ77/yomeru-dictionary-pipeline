@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "tokenizer": "hand-authored-fixture",
+  "documents": [
+    {
+      "id": "development-001",
+      "split": "development",
+      "tokens": [
+        { "surface": "学んだ", "basic": "学ぶ", "reading": "マナブ", "pos": "verb" },
+        { "surface": "読む", "basic": "読む", "reading": "ヨム", "pos": "verb" },
+        { "surface": "未収録", "basic": "未収録", "reading": "ミシュウロク", "pos": "noun" },
+        { "surface": "未収録", "basic": "未収録", "reading": "ミシュウロク", "pos": "noun" },
+        { "surface": "山田", "basic": "山田", "reading": "ヤマダ", "pos": "proper-noun" }
+      ]
+    },
+    {
+      "id": "evaluation-001",
+      "split": "evaluation",
+      "tokens": [
+        { "surface": "辞書", "basic": "辞書", "reading": "ジショ", "pos": "noun" },
+        { "surface": "限定語", "basic": "限定語", "reading": "ゲンテイゴ", "pos": "noun" }
+      ]
+    }
+  ]
+}

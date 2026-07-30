@@ -1,0 +1,12 @@
+Yomeru Dictionary Pipeline
+Copyright 2026 the project contributors
+
+The Apache License 2.0 applies to original source code and documentation in this repository. It does not relicense external dictionary or corpus data.
+
+Bundled sample data:
+- examples/minimal-open-dataset/: hand-authored test fixture, CC0-1.0.
+
+Optional external data processed by users:
+- JMdict is maintained by the Electronic Dictionary Research and Development Group (EDRDG). Users who ingest or redistribute JMdict material must retain the required attribution and comply with its CC BY-SA 4.0 terms. JMdict data is not bundled in this repository.
+
+See docs/data-licenses.md for the data-source register.
