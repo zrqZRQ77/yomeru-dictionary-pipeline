@@ -5,19 +5,30 @@ const root = process.cwd();
 const excludedDirectories = new Set(['.git', 'node_modules']);
 const selfPath = 'scripts/security-scan.mjs';
 const boundaryDocument = 'docs/commercial-boundary.md';
+const readmeDocument = 'README.md';
+const adoptersDocument = 'ADOPTERS.md';
+const ciWorkflow = '.github/workflows/ci.yml';
 const yomeruProjectNamePaths = new Set([
-  'README.md',
+  readmeDocument,
+  adoptersDocument,
   'package.json',
   'NOTICE',
   boundaryDocument,
 ]);
 const allowedTermPaths = new Map([
   ['Yomeru', yomeruProjectNamePaths],
+  ['zrqZRQ77', new Set([readmeDocument])],
   ['GA4', new Set([boundaryDocument])],
   ['AdSense', new Set([boundaryDocument])],
   ['Amazon', new Set([boundaryDocument])],
   ['preview', new Set([boundaryDocument])],
-  ['production', new Set([boundaryDocument, 'examples/minimal-open-dataset/LICENSE'])],
+  ['production', new Set([
+    boundaryDocument,
+    'examples/minimal-open-dataset/LICENSE',
+    readmeDocument,
+    adoptersDocument,
+    ciWorkflow,
+  ])],
   ['hidden acceptance', new Set([boundaryDocument])],
 ]);
 const forbiddenPathParts = [
